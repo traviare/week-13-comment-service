@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервис комментариев</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <h1 class="tittle">Сервис комментариев</h1>
+            <p>Показывать ваше имя?</p>
+            <div>
+                <div class="choice-name">
+                    <div class="choice-name-yes">
+                        <input type="radio" id="yes" name="choice" value="Да" />
+                        <label for="yes">Да</label>
+                    </div>
+                    <div class="choice-name-no">
+                        <input type="radio" id="no" name="choice" value="Нет" />
+                        <label for="no">Нет</label>
+                    </div>
+                </div>
+                <div>
+                    <p>Введите ваше имя:</p>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <p>Добавьте ссылку вашего аватара:</p>
+                    <input type="url" id="link">
+                </div>
+                <div>
+                    <p>Оставьте ваш комментарий:</p>
+                    <textarea name="text-comment" id="comment" cols="40" rows="15"></textarea>
+                </div>
+                <button class="button" onclick="addInformation()">Отправить</button>
+            </div>
+        </div>
+        <div class="right">
+            <h2 class="tittle">Коммаентарии пользователей</h2>
+            <div class="add-information">
+                <div>
+                    <p class="add-name"></p>
+                    <img src="" alt="" class="add-img">
+                </div>
+                <div class="comment-date"></div>
+            </div class="add-comment">
+            <p class="add-comment-text"></p>
+        </div>
+        <script src="./index.js"></script>
+</body>
+
+</html>
